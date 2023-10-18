@@ -1,20 +1,25 @@
 <template>
   <div>
-    <h1>Edit Users</h1>
-    <h1>Edit User</h1>
+    <h1>Edit book</h1>
+    <h1>Edit book</h1>
     <form v-on:submit.prevent="editUser">
-      <p>name: <input type="text" v-model="user.name" /></p>
-      <p>lastname: <input type="text" v-model="user.lastname" /></p>
-      <p>email: <input type="text" v-model="user.email" /></p>
-      <p>password: <input type="text" v-model="user.password" /></p>
-      <p><button type="submit">edit user</button></p>
+      <p>title: <input type="text" v-model="user.title" /></p>
+      <p>author: <input type="text" v-model="user.author" /></p>
+      <p>total_page: <input type="text" v-model="user.total_page" /></p>
+      <p>publisher: <input type="text" v-model="user.publisher" /></p>
+      <p>category: <input type="text" v-model="user.category" /></p>
+      <p>price: <input type="text" v-model="user.price" /></p>
+
+      <p><button type="submit">edit book</button></p>
     </form>
     <hr />
     <div>
-      <p>name: {{ user.name }}</p>
-      <p>lastname: {{ user.lastname }}</p>
-      <p>email: {{ user.email }}</p>
-      <p>password: {{ user.password }}</p>
+      <p>title: {{ user.title }}</p>
+    <p>author {{ user.author }}</p>
+    <p>total_page: {{ user.total_page }}</p>
+    <p>publisher: {{ user.publisher }}</p>
+    <p>category: {{ user.category }}</p>
+    <p>price: {{ user.category }}</p>
       <p></p>
     </div>
   </div>
@@ -25,11 +30,13 @@ export default {
   data() {
     return {
       user: {
-        name: "",
-        lastname: "",
-        email: "",
-        password: "",
-        status: "active"
+        title: "Metaverse",
+    author: "Mark zuckerberg",
+    total_page: 550,
+    publisher: "Chula Book",
+    category: "Text Book",
+    price: 150.0 
+        
       }
     };
   },
