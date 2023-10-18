@@ -26,11 +26,13 @@ export default {
   data() {
     return {
       user: {
-        name: "",
-        lastname: "",
-        email: "",
-        password: "",
-        status: "active"
+    title: "Metaverse",
+    author: "Mark zuckerberg",
+    total_page: 550,
+    publisher: "Chula Book",
+    category: "Text Book",
+    price: 150.0 
+        
       }
     };
   },

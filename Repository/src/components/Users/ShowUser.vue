@@ -1,10 +1,14 @@
 <template>
   <div>
     <h1>Show User</h1>
-    <p>id: {{ user.id }}</p>
-    <p>ชื่อ-นามสกุล: {{ user.name }} - {{ user.lastname }}</p>
-    <p>email: {{ user.email }}</p>
-    <p>password: {{ user.password }}</p>
+    <p>title: {{ user.title }}</p>
+    <p>author {{ user.author }}</p>
+    <p>total_page: {{ user.total_page }}</p>
+    <p>publisher: {{ user.publisher }}</p>
+    <p>category: {{ user.category }}</p>
+    <p>price: {{ user.category }}</p>
+
+
   </div>
 </template>
 <script>

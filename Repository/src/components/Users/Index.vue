@@ -1,12 +1,16 @@
 <template>
   <div>
-    <h1>Get All Users</h1>
+    <h1>Book</h1>
     <div>จํานวนผู้ใช้งาน {{ users.length }}</div>
     <div v-for="user in users" v-bind:key="user.id">
-      <div>id: {{ user.id }}</div>
-      <div>ชืEอ-นามสกุล: {{ user.name }} - {{ user.lastname }}</div>
-      <div>email: {{ user.email }}</div>
-      <div>password: {{ user.password }}</div>
+      <div>title: {{ user.title }}</div>
+      <div>author: {{ user.author }} </div>
+      <div>totai_page: {{ user.totai_page }}</div>
+      <div>publisher: {{ user.publisher }}</div>
+      <div>category: {{ user.category }}</div>
+      <div>price: {{ user.price }}</div>
+      
+
       <p>
         <button v-on:click="navigateTo('/user/' + user.id)">
           ดูข้อมูลผู้ใช้

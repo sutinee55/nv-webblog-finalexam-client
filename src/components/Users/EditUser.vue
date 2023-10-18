@@ -6,7 +6,7 @@
       <p>name: <input type="text" v-model="user.name" /></p>
       <p>lastname: <input type="text" v-model="user.lastname" /></p>
       <p>email: <input type="text" v-model="user.email" /></p>
-      <p>password: <input type="text" v-model="user.password" /></p>
+      <p>pass: <input type="text" v-model="user.password" /></p>
       <p><button type="submit">edit user</button></p>
     </form>
     <hr />
